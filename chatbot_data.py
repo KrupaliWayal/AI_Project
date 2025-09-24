@@ -1,31 +1,3 @@
-# chatbot_data.py
-# Small local "knowledge base" for company-specific answers and simple matching logic.
-
-# FAQ = [
-#     {
-#         "id": "projects",
-#         "questions": ["projects", "ongoing projects", "what projects", "which projects"],
-#         "answer": "We are currently working on Sunshine Residency (multi-storey flats) and Green Valley Villas (independent homes). For site visits, call +91-XXXXXXXXXX."
-#     },
-#     {
-#         "id": "location",
-#         "questions": ["where are you located", "location", "address", "office"],
-#         "answer": "Our head office is at 123 Builder Street, Pune. We operate across Maharashtra and nearby states."
-#     },
-#     {
-#         "id": "pricing",
-#         "questions": ["pricing", "price", "cost estimate", "estimate", "how much does it cost"],
-#         "answer": "Pricing depends on project size and material cost. We can provide a detailed estimate after a short survey or site visit. Would you like to share project details?"
-#     },
-#     {
-#         "id": "contact",
-#         "questions": ["contact", "phone", "call me", "get in touch", "contact details"],
-#         "answer": "You can call us at +91-XXXXXXXXXX or share your details and we'll call you back."
-#     }
-# ]
-
-# chatbot_data.py
-
 CHATBOT_DATA = [
     {"keywords": ["projects", "ongoing projects", "project"], "answer": "We have Sunshine Residency, Green Valley Villas, and Blue Lake Apartments."},
     {"keywords": ["location", "office", "address"], "answer": "Our office is at 123 Builder Street, Pune."},
