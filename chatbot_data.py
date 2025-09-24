@@ -1,0 +1,86 @@
+# chatbot_data.py
+# Small local "knowledge base" for company-specific answers and simple matching logic.
+
+# FAQ = [
+#     {
+#         "id": "projects",
+#         "questions": ["projects", "ongoing projects", "what projects", "which projects"],
+#         "answer": "We are currently working on Sunshine Residency (multi-storey flats) and Green Valley Villas (independent homes). For site visits, call +91-XXXXXXXXXX."
+#     },
+#     {
+#         "id": "location",
+#         "questions": ["where are you located", "location", "address", "office"],
+#         "answer": "Our head office is at 123 Builder Street, Pune. We operate across Maharashtra and nearby states."
+#     },
+#     {
+#         "id": "pricing",
+#         "questions": ["pricing", "price", "cost estimate", "estimate", "how much does it cost"],
+#         "answer": "Pricing depends on project size and material cost. We can provide a detailed estimate after a short survey or site visit. Would you like to share project details?"
+#     },
+#     {
+#         "id": "contact",
+#         "questions": ["contact", "phone", "call me", "get in touch", "contact details"],
+#         "answer": "You can call us at +91-XXXXXXXXXX or share your details and we'll call you back."
+#     }
+# ]
+
+# chatbot_data.py
+
+CHATBOT_DATA = [
+    {"keywords": ["projects", "ongoing projects", "project"], "answer": "We have Sunshine Residency, Green Valley Villas, and Blue Lake Apartments."},
+    {"keywords": ["location", "office", "address"], "answer": "Our office is at 123 Builder Street, Pune."},
+    {"keywords": ["pricing", "cost", "price"], "answer": "Pricing depends on project size. Contact us for an estimate."},
+    {"keywords": ["contact", "phone", "call"], "answer": "Call us at +91-XXXXXXXXXX."},
+    {"keywords": ["team", "staff", "employees"], "answer": "Our team consists of 50+ professionals across architecture, engineering, and sales."},
+    {"keywords": ["amenities", "features"], "answer": "Our projects include gym, pool, parks, clubhouse, and 24/7 security."},
+    {"keywords": ["payment", "installment"], "answer": "We offer flexible payment plans over 1–3 years depending on the project."},
+    {"keywords": ["apartments", "flats"], "answer": "We provide 1BHK, 2BHK, and 3BHK apartments in all our projects."},
+    {"keywords": ["villas", "bungalow"], "answer": "Our villas are premium 3BHK and 4BHK designs with private gardens."},
+    {"keywords": ["availability", "bookings"], "answer": "You can check availability on our website or call our office."},
+    {"keywords": ["floor plan", "layout"], "answer": "We provide detailed floor plans for each project on request."},
+    {"keywords": ["showroom", "visit"], "answer": "Visit our showroom Monday-Saturday from 10 AM to 6 PM."},
+    {"keywords": ["discount", "offer", "deal"], "answer": "We provide seasonal discounts. Contact sales for current offers."},
+    {"keywords": ["luxury", "premium"], "answer": "Our luxury projects include premium finishes, smart home features, and modern amenities."},
+    {"keywords": ["eco-friendly", "sustainable"], "answer": "We use eco-friendly construction materials and energy-efficient designs."},
+    {"keywords": ["parking", "car"], "answer": "All projects have dedicated parking spaces for residents."},
+    {"keywords": ["gym", "fitness"], "answer": "Our projects feature state-of-the-art gyms for residents."},
+    {"keywords": ["pool", "swimming"], "answer": "Swimming pools are available in select projects."},
+    {"keywords": ["security", "safe"], "answer": "We provide 24/7 security with CCTV and gated access."},
+    {"keywords": ["clubhouse", "community"], "answer": "Each project has a clubhouse for community events and gatherings."},
+    {"keywords": ["school", "education"], "answer": "Schools and colleges are within 2–5 km of most projects."},
+    {"keywords": ["hospital", "healthcare"], "answer": "Hospitals and clinics are located near our project areas."},
+    {"keywords": ["market", "shopping"], "answer": "Shopping malls and markets are within a short distance from projects."},
+    {"keywords": ["transport", "bus", "train"], "answer": "Public transport access is available near all projects."},
+    {"keywords": ["green", "garden"], "answer": "Projects have landscaped gardens and green open spaces."},
+    {"keywords": ["pet", "animal"], "answer": "Most projects are pet-friendly."},
+    {"keywords": ["wifi", "internet"], "answer": "High-speed internet connectivity is available in all apartments."},
+    {"keywords": ["maintenance", "service"], "answer": "We provide maintenance services for common areas and facilities."},
+    {"keywords": ["registration", "documents"], "answer": "We guide you through all registration and documentation processes."},
+    {"keywords": ["legal", "law"], "answer": "All projects have verified legal approvals and clearances."},
+    {"keywords": ["loan", "finance"], "answer": "We assist with home loans from multiple banks."},
+    {"keywords": ["booking", "reservation"], "answer": "Bookings can be made online or at our office."},
+    {"keywords": ["open house", "visit"], "answer": "Schedule an open house visit through our website or call."},
+    {"keywords": ["construction", "build"], "answer": "We follow modern construction techniques for quality and safety."},
+    {"keywords": ["timeline", "completion"], "answer": "Project timelines are shared with buyers at booking."},
+    {"keywords": ["interior", "design"], "answer": "We offer interior design suggestions and packages."},
+    {"keywords": ["exterior", "facade"], "answer": "All buildings have modern, aesthetic facades."},
+    {"keywords": ["review", "feedback"], "answer": "Customer reviews are available on our website and social media."},
+    {"keywords": ["gallery", "images", "photos"], "answer": "Project images and gallery are available online."},
+    {"keywords": ["video", "virtual tour"], "answer": "Virtual tours are available for most projects."},
+    {"keywords": ["customer care", "support"], "answer": "Our support team is available Monday-Saturday 10 AM - 6 PM."},
+    {"keywords": ["events", "launch"], "answer": "We organize project launch events and open houses periodically."},
+    {"keywords": ["environment", "clean"], "answer": "Projects follow eco-friendly and clean construction practices."},
+    {"keywords": ["smart home", "automation"], "answer": "Some projects feature smart home automation options."},
+    {"keywords": ["energy", "solar"], "answer": "Solar panels and energy-efficient designs are implemented where possible."},
+    {"keywords": ["community", "neighbors"], "answer": "We focus on creating strong, friendly communities."},
+    {"keywords": ["feedback", "suggestion"], "answer": "We value customer feedback and suggestions for improvements."},
+    {"keywords": ["warranty", "guarantee"], "answer": "Construction and appliances have warranty coverage as applicable."},
+    {"keywords": ["eco-system", "sustainability"], "answer": "We integrate sustainability into landscaping and water management."},
+    {"keywords": ["resale", "investment"], "answer": "Properties are a good investment with resale value in mind."},
+    {"keywords": ["events", "party"], "answer": "Clubhouses can be booked for private events and parties."},
+    {"keywords": ["parking", "guest"], "answer": "Guest parking is available in all projects."},
+    {"keywords": ["transportation", "commute"], "answer": "Projects are well-connected with main roads and highways."},
+    {"keywords": ["security system", "guards"], "answer": "We employ trained security personnel and surveillance systems."},
+    {"keywords": ["community hall", "meetings"], "answer": "Community halls are available for residents' meetings and events."},
+    {"keywords": ["garbage", "waste"], "answer": "Regular waste collection and management are provided."}
+]
